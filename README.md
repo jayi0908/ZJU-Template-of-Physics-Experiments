@@ -1,10 +1,16 @@
-## ZJU-Template-of-Physics-Experiments
+# ZJU-Template-of-Physics-Experiments
 
 这是一个 ZJUers 大学物理实验/普通物理学实验报告模版，用 ```typst``` 语言完成，旨在使得公式编辑等更加简便，也旨在给不愿意用 WORD 的同学一个选择。
 
+> 本仓库中的```template.typ```改写自[memset0](https://github.com/memset0/ZJU-Project-Report-Template)仓库下的```template.typ```，膜mem大佬~
+
 ## 环境配置
 
-想要使用本模版，请自学 typst 的基本语法，并有一个本地的 typst 环境。（如 VSCode 中安装 typst 相关插件，如 [Typst](https://marketplace.visualstudio.com/items?itemName=clysto.typst), [Tinymist Typst](https://marketplace.visualstudio.com/items?itemName=myriad-dreamin.tinymist), [Typst Math](https://marketplace.visualstudio.com/items?itemName=surv.typst-math). 具体有哪些等待后续维护时添加）当然可以在 [官网](https://typst.app) 线上编辑，不过需要将图片、字体等资源上传到网页。
+想要使用本模版，请自学 typst 的基本语法，并有一个本地的 typst 环境。（如 VSCode 中安装 typst 相关插件，如 [Typst](https://marketplace.visualstudio.com/items?itemName=clysto.typst), [Tinymist Typst](https://marketplace.visualstudio.com/items?itemName=myriad-dreamin.tinymist), [Typst Math](https://marketplace.visualstudio.com/items?itemName=surv.typst-math). 具体有哪些等待后续维护时添加）
+
+推荐使用VSCode并安装上述插件以编辑和预览。
+
+当然可以在 [官网](https://typst.app) 线上编辑，不过需要将图片、字体等资源上传到网页。
 
 另外，推荐创建 python 虚拟环境安装需要的py库（除非你知道自己要下载什么），具体操作如下：
 
@@ -15,6 +21,8 @@
 ## 使用
 
 >注：学习陌生的知识最重要的是 **“模仿”**
+
+请在```report.typ```中编辑报告内容。
 
 下面是本模版一些部分的解释：
 
