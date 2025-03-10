@@ -4,7 +4,7 @@
 
 ## 环境配置
 
-想要使用本模版，请自学 typst 的基本语法，并有一个本地的 typst 环境。（如 VSCode 中安装 typst 相关插件，如 [Tinymist Typst](https://marketplace.visualstudio.com/items?itemName=myriad-dreamin.tinymist), [Typst Math](https://marketplace.visualstudio.com/items?itemName=surv.typst-math). 具体有哪些等待后续维护时添加）当然可以在 [官网](https://typst.app) 线上编辑，不过需要将图片、字体等资源上传到网页。
+想要使用本模版，请自学 typst 的基本语法，并有一个本地的 typst 环境。（如 VSCode 中安装 typst 相关插件，如 [Typst](https://marketplace.visualstudio.com/items?itemName=clysto.typst), [Tinymist Typst](https://marketplace.visualstudio.com/items?itemName=myriad-dreamin.tinymist), [Typst Math](https://marketplace.visualstudio.com/items?itemName=surv.typst-math). 具体有哪些等待后续维护时添加）当然可以在 [官网](https://typst.app) 线上编辑，不过需要将图片、字体等资源上传到网页。
 
 另外，推荐创建 python 虚拟环境安装需要的py库（除非你知道自己要下载什么），具体操作如下：
 
@@ -20,21 +20,29 @@
 
 ---
 
-第一页为封面，有类似于：```实验名称：#underline(" " * 25)```的代码，为待定项。
-
-![实验名称](./images/实验名称.png)
-
-若想填上某项内容（比如 “双臂电桥测低电阻”），则可以适当减少下划线数：
-
 ```typst
-实验名称：#underline(" " * 5)双臂电桥测低电阻#underline(" " * 5)
+#show: project.with(
+  type: "shiyan", //报告类型，"shiyan"表示实验报告，"yuxi"表示预习报告
+  experiment: "双臂电桥测低值电阻", //实验名称
+  table: "1", //实验桌号
+  teacher: "某老师", //指导教师
+  class: "某班", //班级
+  author: "xxx", //姓名
+  school_id: "324010xxxx", //学号
+  date: "2025年3月xx日", //日期
+  day: "星期四上午", //星期*上/下午
+)
 ```
 
-可得到：
+这是本报告的一些参数（主要体现在封面），具体内容如注释所示
 
-![完整实验名称](./images/完整实验名称.png)
+---
 
-同样的方法可以完成第一页。
+```typst
+#header(tag: "1")
+```
+
+这是标题的简化表达，具体每个```tag```对应的标题在```template.typ```中，其标号和 “物理实验报告模版” 的标号是一致的。对于预习报告，这些```header```不全需要，只需保留```tag: "1.1"```到```tag: "1.3"```即可。
 
 ---
 
@@ -52,7 +60,7 @@
 
 ![实验原理](./images/实验原理.png)
 
-要修改内容只要修改两个```[]``` 内容即可；同理也可继续添加偶数个```[]```，以添加更多的项。
+要修改内容只要修改两个 ```[]``` 内容即可；同理也可继续添加偶数个```[]```，以添加更多的项。
 
 ---
 
