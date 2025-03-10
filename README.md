@@ -1,12 +1,12 @@
 # ZJU-Template-of-Physics-Experiments
 
-这是一个 ZJUers 大学物理实验/普通物理学实验报告模版，用 ```typst``` 语言完成，旨在使得公式编辑等更加简便，也旨在给不愿意用 WORD 的同学一个选择。
+这是一个 ZJUers 大学物理实验/普通物理学实验报告模版，用 Typst 语言完成，旨在使得公式编辑等更加简便，也旨在给不愿意用 WORD 的同学一个选择。
 
 > 本仓库中的```template.typ```改写自[memset0](https://github.com/memset0/ZJU-Project-Report-Template)仓库下的```template.typ```，膜mem大佬~
 
 ## 环境配置
 
-想要使用本模版，请自学 typst 的基本语法，并有一个本地的 typst 环境。（如 VSCode 中安装 typst 相关插件，如 [Typst](https://marketplace.visualstudio.com/items?itemName=clysto.typst), [Tinymist Typst](https://marketplace.visualstudio.com/items?itemName=myriad-dreamin.tinymist), [Typst Math](https://marketplace.visualstudio.com/items?itemName=surv.typst-math). 具体有哪些等待后续维护时添加）
+想要使用本模版，请自学 Typst 的基本语法，并有一个本地的 Typst 环境。（如 VSCode 中安装 Typst 相关插件，如 [Typst](https://marketplace.visualstudio.com/items?itemName=clysto.typst), [Tinymist Typst](https://marketplace.visualstudio.com/items?itemName=myriad-dreamin.tinymist), [Typst Math](https://marketplace.visualstudio.com/items?itemName=surv.typst-math). 具体有哪些等待后续维护时添加）
 
 推荐使用VSCode并安装上述插件以编辑和预览。
 
@@ -23,6 +23,8 @@
 >注：学习陌生的知识最重要的是 **“模仿”**
 
 请在```report.typ```中编辑报告内容。
+
+> 若你是 WSL/macOS/Linux环境，打开```report.typ```后无法正常预览中文，可能是字体缺失，需运行当前目录下的```makefile```文件，WSL/Linux用户运行```make wsl```，macOS用户运行```make mac```，然后刷新VSCode或其他预览器即可。
 
 下面是本模版一些部分的解释：
 
@@ -64,7 +66,7 @@
 )
 ```
 
-这是一个伪 enumerate （LaTeX语法块）的 typst 代码，效果如下：
+这是一个伪 enumerate （LaTeX语法块）的 Typst 代码，效果如下：
 
 ![实验原理](./images/实验原理.png)
 
@@ -107,7 +109,7 @@
 
 ## 导出
 
-对于最后的导出，从 typst 文件导出 PDF 是非常容易的（且转换效率很高，基本所见即所得），但是从 PDF 转到 WORD/docx 文档则可能会有损失。目前最优的转换途径为使用 WPS 将 PDF 转为 docx，但即便如此，在项目测试时出现过公式转换受损的情况。得出的结论暂为输入不止一个公式可解决该问题，后续维护时也会给出更具体的解决方案。
+对于最后的导出，从 Typst 文件导出 PDF 是非常容易的（且转换效率很高，基本所见即所得），但是从 PDF 转到 WORD/docx 文档则可能会有损失。目前最优的转换途径为使用 WPS 将 PDF 转为 docx，但即便如此，在项目测试时出现过公式转换受损的情况。得出的结论暂为输入不止一个公式可解决该问题，后续维护时也会给出更具体的解决方案。
 
 ## Others
 
